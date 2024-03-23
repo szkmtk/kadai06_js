@@ -1,0 +1,59 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#map {
+    height: 80%; /* マップの高さを画面の80%に設定 */
+    width: 100%; /* 幅を100%にして画面全体に広げる */
+    margin-top: 20px; /* ボタンとの間に余白を作る */
+}
+
+#findCafes {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50; /* グリーン系の色 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px #388E3C;
+}
+
+#findCafes:hover {
+    background-color: #45a049;
+}
+
+#findCafes:active {
+    box-shadow: 0 1px #666;
+    transform: translateY(2px);
+}
+
+@media screen and (max-width: 600px) {
+    #map {
+        height: 60%; /* スマホ表示ではマップの高さを60%に */
+    }
+    #findCafes {
+        width: 90%; /* スマホ表示ではボタンの幅を90%に */
+    }
+}
+
+#loading {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.gm-style-iw {
+    max-width: 300px !important;
+}
+
+.gm-style-iw img {
+    max-width: 100%;
+    height: auto;
+}
